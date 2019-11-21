@@ -72,7 +72,7 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+  return arr.flatMap((value,index,array) => value > 0? value: array.slice(index+1, 1));
 }
 
 /**
